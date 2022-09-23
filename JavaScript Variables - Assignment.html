@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js variable</title>
+</head>
+
+<body style="text-align: center; justify-content: space-between;">
+    <div style="border-style:solid; margin: 400px;">
+            <h1>Redeclaring a Variable using let</h1>
+            <h3 id="demo0"></h3>
+    </div>
+    <br>
+    <div style="border-style:solid; margin: 500px;">
+        <h1>JavaScript Const</h1>
+        <h3 id="demo1"></h3>
+        <h3 id="demo2"></h3>
+    </div>
+    <script>
+        // declaring variable using let keyword
+        let x = "4";
+        // redeclaring the variable inside the block 
+        function b() {
+            x = "hello";
+        }
+        b();
+        console.log(x);
+        //printing variable ouside the block
+        document.getElementById("demo0").innerHTML = x;
+
+        //-----------------------------------------------------------------------//
+
+        // Declare an Array:
+        const phones = ["iphone", "Redmi", "oppo"];
+        // Display the Array:
+        document.getElementById("demo1").innerHTML = phones;
+        //modify an element:
+        phones[1] = "OnePlus";
+        // add an element:
+        phones.push("Moto");
+        // Display Array after modification:
+        document.getElementById("demo2").innerHTML = phones;
+    </script>
+</body>
+
+</html>
